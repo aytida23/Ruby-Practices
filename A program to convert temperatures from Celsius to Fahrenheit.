@@ -1,0 +1,10 @@
+#this script show how you can convert degrees celsius to degrees fahrenheit
+
+puts "Enter degrees in celsius"
+x = gets.chomp
+
+def conversion(x)
+  return x * 1.8 + 32
+end
+
+puts "The #{x} degrees Celsius temperature is equals to #{conversion(x.to_i)} degrees Fahrenheit"
