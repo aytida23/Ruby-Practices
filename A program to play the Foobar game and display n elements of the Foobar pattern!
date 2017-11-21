@@ -1,0 +1,30 @@
+#the person who starts the game says the number "1."
+#Each student in the circle has a turn to say the next number in a pattern.
+#The catch is: for all numbers that are divisible by three, the player should say "foo."
+#For any number divisible by five, the player should say "bar." Numbers divisible by both become "Foobar."
+
+puts "How many items do you want to see?"
+items = gets.to_i
+
+array1 = []
+items.times do |n|
+  b = n + 1
+  array1.push(b)
+end
+
+
+def foobar(array1)
+    array1.each do |item|
+    if item % 3 == 0 && item % 5 != 0
+      puts "Foo"
+    elsif item % 5 == 0 && item % 3 != 0
+      puts "bar"
+    elsif item % 3 == 0 && item % 5 == 0
+      puts "Foobar"
+    else
+      puts item
+    end
+  end
+end
+
+foobar(array1)
