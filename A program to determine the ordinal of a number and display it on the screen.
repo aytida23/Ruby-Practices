@@ -1,0 +1,29 @@
+#this script show how to determine the ordinal of a number and display it on the screen
+#we have to use to lop off the right-most digit is to calculate the number's % 10.
+
+puts "Hey There! Enter a number to convert it into an ordinal form: "
+number = gets.chomp.to_i
+
+def ordinal_of_a_number(number)
+  remainder_divided_by_10 = number % 10
+  last_two = number % 100
+  
+  if last_two == 11 || last_two == 12 || last_two == 13
+    puts "That's the #{number}th item!"
+  
+  elsif remainder_divided_by_10 == 1
+    puts "That's the #{number}st item!"
+  
+  elsif remainder_divided_by_10 == 2
+    puts "That's the #{number}nd item!"
+  
+  elsif remainder_divided_by_10 == 3
+    puts "That's the #{number}rd item!"
+    
+  else
+    puts "That's the #{number}th item!"
+  end
+  
+end
+
+ordinal_of_a_number(number)
