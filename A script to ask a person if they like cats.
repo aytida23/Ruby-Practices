@@ -1,0 +1,17 @@
+#this script ask if a person likes cat or not using if and else statements and displays some msgs if a person says "yes" or "no"
+#making this script work with elsif statements 
+
+puts "Hey There! Do you like Cats? note: reply with only yes and no"
+cats = gets.chomp
+
+def hello(cats)
+  if cats == "yes"
+    puts "Ken does too."
+  elsif cats == "no"
+    puts "Dogs are better!"
+  else
+    puts "It's hard to decide"
+  end
+end
+
+hello(cats)
