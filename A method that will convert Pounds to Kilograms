@@ -1,0 +1,7 @@
+#script show conversion of pounds to kilograms
+
+def pounds_to_kilograms(a)
+  return a * 0.454
+end
+
+puts "#{pounds_to_kilograms(90)} kg"
