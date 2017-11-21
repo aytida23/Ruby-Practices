@@ -1,0 +1,33 @@
+#this script will show how to use logical operator to do the following question
+#make a new method that uses the is_even? method, and determines if the number is divisible by 5 and also even
+
+def is_even?(n)
+  remainder_when_divided_by_2 = n % 2
+  
+  if remainder_when_divided_by_2 == 0
+    return true
+  else
+    return false
+  end
+end
+
+def is_even_and_divisible_by_five?(n)
+  remainder_when_divided_by_5 = n % 5
+  
+  if remainder_when_divided_by_5 == 0 && (remainder_when_divided_by_5 && is_even?(n))
+    return true
+  else
+    return false
+  end
+end
+
+puts "4 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(4)}"
+puts "5 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(5)}"
+puts "6 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(6)}"
+puts "10 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(10)}"
+puts "11 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(11)}"
+puts "12 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(12)}"
+puts "13 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(15)}"
+puts "20 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(20)}"
+puts "30 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(30)}"
+puts "50 is_even_and_divisible_by_five? #{is_even_and_divisible_by_five?(50)}"
