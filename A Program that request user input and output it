@@ -1,0 +1,5 @@
+puts "Tell me, what are you doing rn?"
+doing = gets.chomp
+
+reply = "#{doing} is good but do something more valuable after this."
+puts reply
