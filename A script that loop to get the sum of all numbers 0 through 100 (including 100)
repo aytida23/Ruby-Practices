@@ -1,0 +1,7 @@
+#Write a loop to get the sum of all numbers 0 through 100 (including 100)
+
+sum = 0
+101.times do |n|
+  sum = n + sum
+  puts "The sum is: #{sum}"
+end
