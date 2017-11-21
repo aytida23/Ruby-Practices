@@ -1,0 +1,11 @@
+#this script will show if user age is less than 21 he/she's legally not allowed to buy alcohol 
+#otherwise he/she's legally allowed to buy alcohol in US
+
+puts "Hey There! Enter your age in years"
+years = gets.chomp.to_i
+
+if years < 21
+  puts "You are not legally allowed to buy alcohol in the US."
+else
+  puts "You are legally allowed to buy alcohol in the US."
+end
