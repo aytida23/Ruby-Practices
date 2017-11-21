@@ -1,0 +1,9 @@
+#this script show how one can convert inches into centimeters with user input
+
+puts "Enter your smartphone screen length in inches"
+inches = gets.chomp
+
+centimeters = 2.54
+conversion = centimeters * inches.to_f
+converted_value = "Hey There! Your smartphone length is #{inches} inches which is equals to #{conversion} cm"
+puts converted_value
